@@ -1,4 +1,4 @@
-# Resume Tracker Frontend
+# AI Resume Screener Frontend
 
 A modern React-based web application for tracking job applications and managing resumes with a beautiful, responsive UI.
 
@@ -52,7 +52,7 @@ Create a `.env` file in the root directory:
 
 ```env
 VITE_API_BASE_URL=http://localhost:8000
-VITE_APP_NAME=Resume Tracker
+VITE_APP_NAME=AI Resume Screener
 ```
 
 ### 4. Start Development Server
@@ -192,7 +192,7 @@ npm run build
 
 ```env
 VITE_API_BASE_URL=https://your-api-domain.com
-VITE_APP_NAME=Resume Tracker
+VITE_APP_NAME=AI Resume Screener
 ```
 
 ## 🤝 Contributing

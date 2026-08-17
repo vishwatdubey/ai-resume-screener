@@ -41,7 +41,7 @@ export default function Login() {
         <Card sx={{ width: '100%' }}>
           <CardContent>
             <Typography component="h1" variant="h5" align="center" gutterBottom>
-              Resume Tracker
+              AI Resume Screener
             </Typography>
             <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField

@@ -10,7 +10,7 @@ from app.db import models
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="Resume Matching System",
+    title="AI Resume Screener",
     description="API for matching candidates with job descriptions",
     version="1.0.0",
 )
@@ -31,7 +31,7 @@ app.include_router(jobs.router, prefix="/api", tags=["Jobs"])
 
 @app.get("/")
 async def root():
-    return {"message": "Resume Matching System API"}
+    return {"message": "AI Resume Screener API"}
 
 if __name__ == "__main__":
     import uvicorn

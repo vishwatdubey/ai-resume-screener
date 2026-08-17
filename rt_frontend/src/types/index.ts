@@ -1,4 +1,4 @@
-// TypeScript interfaces for Resume Tracker API
+// TypeScript interfaces for AI Resume Screener API
 
 // User types
 export interface User {

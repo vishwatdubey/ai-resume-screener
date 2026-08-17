@@ -1,4 +1,4 @@
-# Resume Tracker Backend API
+# AI Resume Screener Backend API
 
 A robust FastAPI-based backend service for processing resumes, matching candidates with job descriptions, and providing detailed analysis using local LLM capabilities.
 

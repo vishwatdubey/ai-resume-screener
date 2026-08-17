@@ -1,10 +1,10 @@
-# Resume Tracker
+# AI Resume Screener
 
 A comprehensive full-stack application for tracking job applications, managing resumes, and matching candidates with job descriptions using AI-powered analysis.
 
 ## 🚀 Overview
 
-Resume Tracker is a modern web application that helps recruiters and HR professionals efficiently manage the hiring process. The system combines a React-based frontend with a FastAPI backend to provide:
+AI Resume Screener is a modern web application that helps recruiters and HR professionals efficiently manage the hiring process. The system combines a React-based frontend with a FastAPI backend to provide:
 
 - **Resume Management**: Upload, store, and organize candidate resumes
 - **Job Posting Management**: Create and manage job listings
