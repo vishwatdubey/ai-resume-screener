@@ -838,50 +838,6 @@ async def process_and_match(
         db.add(job)
         db.flush()  # Flush to get the ID
 
-        # Ranking prompt for comparing resumes
-        ranking_prompt = f"""
-        You are a skilled HR talent matcher. Here is a job description and candidate resumes.
-
-        JOB DESCRIPTION:
-        {job_description}
-
-        {"\n".join([f"RESUME {i+1}:\n{c.resume_text}\n" for i, c in enumerate(candidates)])}
-
-        Compare candidates for this job and provide a detailed analysis in the following JSON format:
-        {{
-            "winner": "Candidate 1 or Candidate 2 or ...",
-            "overall_scores": {{
-                "candidate1": 0.85,
-                "candidate2": 0.65
-            }},
-            "detailed_analysis": {{
-                "candidate1": {{
-                    "strengths": ["strength1", "strength2", ...],
-                    "weaknesses": ["weakness1", "weakness2", ...],
-                    "experience_match": 0.85,
-                    "skills_match": 0.90,
-                    "education_match": 0.75
-                }},
-                "candidate2": {{
-                    "strengths": ["strength1", "strength2", ...],
-                    "weaknesses": ["weakness1", "weakness2", ...],
-                    "experience_match": 0.70,
-                    "skills_match": 0.80,
-                    "education_match": 0.85
-                }}
-            }},
-            "comparison_points": [
-                {{
-                    "aspect": "Technical Skills",
-                    "candidate1_advantage": "description of advantage",
-                    "candidate2_advantage": "description of advantage"
-                }},
-                ...
-            ],
-            "recommendation": "Detailed explanation of why the winner was chosen and how they best match the job requirements"
-        }}
-        """
-
         try:
             # Initialize Ollama client
             ollama_client = OllamaClient()

@@ -1,0 +1,8 @@
+{
+  "fullName": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "phone": "+1 415-555-0132",
+  "skills": ["Python", "React", "SQL"],
+  "yearsOfExperience": 3.5,
+  "education": "B.Tech Computer Science"
+}
